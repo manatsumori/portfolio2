@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MANATSU MORI | Portfolio</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+    <div id="header_top">
+        <p>Welcome to my page !</p>
+    </div>
+
+    <header> <!-- header -->
+        <nav class="global_menu">
+            <div class="menu">
+                <a id="menu_visible">MENU</a>
+                <ul class="child_menu">
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="graphic.html">GRAPHIC</a></li>
+                    <li><a href="web.html">WEB</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+              </div>
+        </nav>
+        <h1><a href="index.html">MANATSU MORI</a></h1>
+        <span><a href="#">SEARCH</a></span>
+    </header>
+
+
+    <div id="contents">
+        <div id="about"> <!-- about -->
+            <h2>About</h2>
+            <img src="images/my2.png" alt="">
+            <h3>Profile</h3>
+                <div class="about_text">
+                    <p>
+                        森 真都　( 1996.07.18 )<br>
+                        グラフィック、WEBデザインに興味があり、<br>
+                        オンライン講座を受けながら独学で勉強中です。<br>
+                        Photoshop,HTML,CSSの基礎的な操作は可能です。
+                    </p>
+                </div>
+            
+            <h3>Education</h3>
+               <div class="about_text">
+                    <p><span>2015.04</span>大阪モード学園 ファッションデザイン学科 入学</p>
+                    <p><span>2019.03</span>大阪モード学園 ファッションデザイン学科 卒業</p>
+                    <p><span>2021.09</span>弘益大学国際言語教育院 ( 韓国 )　語学堂　入学</p>
+                    <p><span>2022.05</span>弘益大学国際言語教育院 ( 韓国 )　語学堂　卒業</p>
+                </div>
+    
+            <h3>Career</h3>
+                <div class="about_text">
+                    <p><span>2019.04〜2019.09</span>株式会社ストライプインターナショナル / 販売</p>
+                    <p><span>2019.10〜2020.09</span>株式会社フォルスタイル forucafe / バリスタ</p>
+                    <p><span>2020.10〜2021.08</span>cafe Ato / バリスタ</p>
+                </div>
+
+            <h3>License</h3>
+                <div class="about_text">
+                    <p><span>2015.08</span>普通自動車第一種運転免許 取得</p>
+                    <p><span>2022.01</span>韓国語能力試験 ４級 合格</p>
+                </div>
+        </div>
+    </div>
+
+    <footer> <!-- footer -->
+       
+        <div id="footer_inner">
+            <p>Manatsu Mori | <a href="mailto:manamollyy@gmail.com">manamollyy@gmail.com</a></p>
+        </div>
+
+        <div id="footer_right">
+            <a href="#" class="arrow icon"></a>
+        </div>
+    </footer>
+
+
+    <script>
+        function openClose() {
+            let childMenu = document.querySelector(".child_menu")
+           if(childMenu.style.display == 'none'){
+            childMenu.style.display = "block";
+           }
+            else{
+                childMenu.style.display = "none"
+            }
+        }
+        
+        
+           let menuVisible = document.getElementById("menu_visible");
+           menuVisible.addEventListener("click",openClose)
+        </script>
+</body>

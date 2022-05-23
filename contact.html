@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+	<meta charset="UTF-8">
+	<title>MANATSU MORI | Portfolio</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <div id="header_top">
+        <p>Welcome to my page !</p>
+    </div>
+
+    <header> <!-- header -->
+        <nav class="global_menu">
+            <div class="menu">
+                <a id="menu_visible">MENU</a>
+                <ul class="child_menu">
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="graphic.html">GRAPHIC</a></li>
+                    <li><a href="web.html">WEB</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+              </div>
+        </nav>
+        <h1><a href="index.html">MANATSU MORI</a></h1>
+        <span><a href="#">SEARCH</a></span>
+    </header>
+
+    <div id="contents">
+
+        <div id="contact"> <!-- contact -->
+            <h2>Contact</h2>
+            <p>
+                Thank you for visiting my page.<br>
+                <br>
+                <div id="address">
+                    <i class="bi bi-telephone"></i> 080-6109-6336<br>
+                    <a href="mailto:manamollyy@gmail.com"><i class="bi bi-envelope"></i> manamollyy@gmail.com</a>
+                </div>
+            </p>
+        </div>
+
+    </div>
+
+
+    <footer> <!-- footer -->
+       
+        <div id="footer_inner">
+            <p>Manatsu Mori | <a href="mailto:manamollyy@gmail.com">manamollyy@gmail.com</a></p>
+        </div>
+
+        <div id="footer_right">
+            <a href="#" class="arrow icon"></a>
+        </div>
+    </footer>
+
+
+    <script>
+        function openClose() {
+            let childMenu = document.querySelector(".child_menu")
+           if(childMenu.style.display == 'none'){
+            childMenu.style.display = "block";
+           }
+            else{
+                childMenu.style.display = "none"
+            }
+        }
+        
+        
+           let menuVisible = document.getElementById("menu_visible");
+           menuVisible.addEventListener("click",openClose)
+        </script>
+</body>
