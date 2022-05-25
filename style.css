@@ -297,6 +297,13 @@ div#main {
     float: left;
 }
 
+.portfolio {
+    width: 250px;
+    height: auto;
+    text-align: left;
+    margin: 0  auto;
+}
+
 
 
 /* ========================================
